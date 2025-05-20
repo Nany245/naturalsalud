@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Página principal</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../CSS/index.css"/>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="sidebar">
+    <div class="profile">
+        <img src="../IMG/icon-perfil.png" alt="Foto de perfil del administrador">
+        <p>Administrador</p>
+    </div>
+    <nav>
+    <a href="../HTML/index.html"><img src="../IMG/dashboard.png" alt="" width="30px">Panel de control</a>
+    <a href="../HTML/seleccionarcursosadmin.html"><img src="../IMG/icon-cursosytecnicas.png" alt="" width="30px">Cursos y técnicas</a>
+    <a href="../HTML/registrarse.html"><img src="../IMG/logout.png" alt="" width="30px">Cerrar sesión</a>
+    </nav>
+</div>
+
+<div class="main">
+    <h1>Página principal</h1>
+    <a href="seleccionarcursosadmin.html"><div class="card-container">
+    <div class="card">
+        <img src="../IMG/cursos-icon.png" alt="foto del maestro" width="120px">
+        <h2>Cursos</h2>
+        <div class="buttons">
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Eliminar</button>
+    </div>
+    </div></a>
+    <a href="adminselec-maestros.html"><div class="card">
+        <img src="../IMG/maestros-icon.png" alt="foto del maestro" width="145px">
+        <h2>Profesores</h2>
+        <div class="buttons">
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Eliminar</button>
+        </div>
+    </div></a>
+    <a href="adminselec-tecnica.html"><div class="card">
+        <img src="../IMG/tecnicas.png" alt="">
+        <h2>Técnicas</h2>
+        <div class="buttons">
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Eliminar</button>
+        </div>
+    </div></a>
+    <a href="adminselec-estudiant.html"><div class="card">
+        <img src="../IMG/estudiantes.png" alt="">
+        <h2>Estudiantes</h2>
+        <div class="buttons">
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Eliminar</button>
+        </div>
+    </div></a>
+    </div>
+</div>
+<script src="../JAVASCRIPT/eliminar_dashboard.js"></script>
+<button onclick="history.back()" class="btn-nav back-btn" title="Atrás">←</button>
+<button onclick="history.forward()" class="btn-nav forward-btn" title="Adelante">→</button>
+</body>
+</html>

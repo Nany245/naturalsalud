@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #32333E;
+    color: rgb(249, 242, 242);
+    height: 150Svh;
+    position: fixed;
+    padding-top: 20px;
+  }
+  
+  .sidebar .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar .profile img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .sidebar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color, color 0.3s ease;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: #242f3b;
+    border-radius: 5%;
+  }
+  
+  .sidebar nav a:active {
+    color: white;  
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    margin-left: 250px;
+    height: 900px;
+    background-color: white;
+    color: black;
+    padding: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .edit {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .delete {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    background-color: #45a049;
+  }
+  
+  .delete:hover {
+    background-color: #d32f2f;
+  }
+  .btn-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn {
+  left: 10px;
+  background-color: #C0392B;
+}
+
+
+.forward-btn {
+  right: 10px;
+  background-color: #27AE60;
+}
+
+.btn-nav:hover {
+  transform: translateY(-50%) scale(1.1);
+}
